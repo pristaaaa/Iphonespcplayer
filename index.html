@@ -27,6 +27,18 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 	<script src="livecrichd.js"></script>
   <style>
+	  .logo-container {
+    position: fixed;
+    top: 10px; /* Adjust this value to your preference */
+    left: 10px; /* Adjust this value to your preference */
+    z-index: 1000; /* Ensure the logo appears above other content */
+}
+
+.logo-container img {
+    width: 50px; /* Adjust this value to your logo size */
+    height: auto;
+}
+	  
     html {
       font-family: Poppins;
       background: #000;
@@ -123,6 +135,9 @@
   </style>
 
 <body>
+	<div class="logo-container">
+        <img src="https://i.im.ge/2024/03/21/RVYV1M.IMG-20240321-223833-908-removebg-preview.png" alt="Logo">
+	</div>
 
   <div id="loading" class="loading">
 
