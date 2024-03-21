@@ -25,44 +25,7 @@
   <script src="https://cdn.jsdelivr.net/npm/hls.js@1.1.4/dist/hls.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-	<script>
-		       document.addEventListener("contextmenu", function(e) {
-		            e.preventDefault();
-		        }, false);
-		        document.addEventListener("keydown", function(e) {
-		            //document.onkeydown = function(e) {
-		            // "I" key
-		            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
-		                disabledEvent(e);
-		            }
-		            // "J" key
-		            if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-		                disabledEvent(e);
-		            }
-		            // "S" key + macOS
-		            if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
-		                disabledEvent(e);
-		            }
-		            // "U" key
-		            if (e.ctrlKey && e.keyCode == 85) {
-		                disabledEvent(e);
-		            }
-		            // "F12" key
-		            if (event.keyCode == 123) {
-		                disabledEvent(e);
-		            }
-		        }, false);
-		 
-		        function disabledEvent(e) {
-		            if (e.stopPropagation) {
-		                e.stopPropagation();
-		            } else if (window.event) {
-		                window.event.cancelBubble = true;
-		            }
-		            e.preventDefault();
-		            return false;
-		        }
-	</script>
+	<script src="livecrichd.js"></script>
   <style>
     html {
       font-family: Poppins;
@@ -172,13 +135,7 @@
 <source id="m3u8-url" src="" type="application/x-mpegURL" />
 
     </video>
-    			   <script>
-   var urlParams = new URLSearchParams(window.location.search);
-      var maxvalue=urlParams.get('dtv');
-
-        
-document.getElementById("m3u8-url").setAttribute("src",maxvalue);
-</script>
+    			   <script src="livecrichd1.js></script>
 </body>
 <script>
 setTimeout(videovisible, 1000)
